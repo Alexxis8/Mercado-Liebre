@@ -1,0 +1,37 @@
+.caja-form{
+    display: flex;
+    justify-content: center;
+}
+
+.form{
+    border: 2px solid rgb(58, 56, 56);
+    padding: 25px;
+    border-radius: 10px;
+    background-color: var(--gris-claro);
+    width: 50%;
+    box-sizing: border-box;
+}
+
+.form div{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    padding: 10px;
+    border: 2px solid rgba(8, 8, 8, 0.514);
+    width: 100%;
+}
+
+.btn{
+    transition: all 0.80s;
+}
+
+.btn:hover{
+    background-color: #0022AA;
+}
+
+@media (min-width: 361px){
+    .form{
+        display: inline-table;
+    }
+}
