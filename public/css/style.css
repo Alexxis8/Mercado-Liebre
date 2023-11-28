@@ -21,8 +21,8 @@ header{
     background-color: var(--amarillo);
 }
 
-.logo{
-    width: 50%;
+.caja-logo{
+    width: 30%;
     padding: 10px;
 
 }
@@ -58,11 +58,11 @@ header{
 }
 
 .forma-pago{
-    display: flex;
+    width: 35%;
     text-align: center;
+    font-size: 15px;
 }
-
-nav{
+nav.nav-bar{
     display: none;
 }
 
@@ -73,6 +73,7 @@ header ul li{
 a{
     text-decoration: none;
     color: #000;
+    padding: 8px;
 }
 
 .burger-menu{
@@ -81,11 +82,11 @@ a{
 
 .burger-menu i{
     background-color: var(--celeste);
-    color: #fff;
-    font-size: 20px;
-    border-radius: 5px;
-    padding: 12px;
-    margin: 10px 0 20px 0;
+color: #fff;
+font-size: 20px;
+border-radius: 5px;
+padding: 12px;
+margin: 10px 0 20px 0;
 }
 
 body {
@@ -217,39 +218,39 @@ footer{
     font-size: 40px;
 }
 
-@media (min-width: 361px){
+
+@media (min-width: 320px){
     article{
-        width: 40%;
+        width: 44%;
     }
     .productos{
         justify-content: space-around;
     }
-    nav{
-        display: block;
-    }
     .buscador{
-        width: 60%;
+        width: 35%;
     }
 }
-@media (min-width: 769px){
-    .burger-menu{
+
+@media (min-width: 425px){
+    .burger-menu i{
         display: none;
     }
+    nav.nav-bar{
+        display: flex;
+        padding: 0px 13px 11px 13px;
+        justify-content: space-between;
+    }
+}
+
+@media (min-width: 769px){
     article{
         width: 20%;
     }
     .productos{
         justify-content: space-between;
     }
-    nav{
-        display: flex;
-        justify-content: space-between;
-        padding: 15px;
-    }
     ul {
         display: flex;
-        justify-content: space-evenly;
-        width: 100%;
     }
     a{
         width: 30%;
